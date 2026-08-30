@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"venuemate-app","appId":"1:235363941651:android:2dcda8410b7925937aaee6","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"venuemate-app","configurations":{"android":"1:235363941651:android:2dcda8410b7925937aaee6","ios":"1:235363941651:ios:93b5013883e732d47aaee6"}}}}}}
