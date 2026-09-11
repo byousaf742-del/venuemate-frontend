@@ -3,7 +3,7 @@ import 'user_service.dart';
 
 class ApiClient {
   
-  static const String baseUrl = 'https://venuemate-backend-production-3082.up.railway.app/api';
+  static const String baseUrl = 'https://venuemate-backend-production-5c46.up.railway.app/api';
 
   static final Dio _dio = Dio(BaseOptions(
     baseUrl: baseUrl,
