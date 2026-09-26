@@ -737,8 +737,8 @@ String _formatAmount(dynamic amount) {
 
                     
                     _addVenueField('Price Per Day (PKR)', 'e.g. 150000',
-                        Icons.currency_rupee_rounded, priceCtrl,
-                        keyboardType: TextInputType.number),
+                        null, priceCtrl, 
+                        keyboardType: TextInputType.number, prefixText: 'Rs  '),
                     const SizedBox(height: 14),
 
                     // MENU PRICING
@@ -886,10 +886,11 @@ String _formatAmount(dynamic amount) {
 Widget _addVenueField(
   String label,
   String hint,
-  IconData icon,
+  IconData? icon,
   TextEditingController ctrl, {
   TextInputType? keyboardType,
   int maxLines = 1,
+  String? prefixText,
 }) {
   return TextFormField(
     controller: ctrl,
@@ -899,8 +900,8 @@ Widget _addVenueField(
     decoration: InputDecoration(
       labelText: label,
       hintText: hint,
-      prefixIcon: Icon(icon, size: 20, color: AppTheme.primary),
-      prefixText: label.contains('PKR') ? 'PKR ' : null,
+      prefixIcon: icon != null ? Icon(icon, size: 20, color: AppTheme.primary) : null,
+      prefixText: prefixText,
       prefixStyle: GoogleFonts.plusJakartaSans(
       fontSize: 14,
       fontWeight: FontWeight.w600,
@@ -1117,8 +1118,8 @@ Widget _addVenueField(
                         Icons.business_rounded, nameCtrl),
                     const SizedBox(height: 12),
                     _addVenueField('Price Per Day (PKR)', '',
-                        Icons.currency_rupee_rounded, priceCtrl,
-                        keyboardType: TextInputType.number),
+                        null, priceCtrl,
+                        keyboardType: TextInputType.number, prefixText: 'Rs  '),
                     const SizedBox(height: 12),
                       _addVenueField('Address', '',
                         Icons.location_on_outlined, addressCtrl),

@@ -163,7 +163,7 @@ class _AuthFormWidgetState extends State<AuthFormWidget> {
             const SizedBox(height: 14),
             _buildField(
               controller: _phoneController,
-              label: 'Phone Number (Optional)',
+              label: 'Phone Number',
               hint: '03XX-XXXXXXX',
               icon: Icons.phone_outlined,
               keyboardType: TextInputType.phone,

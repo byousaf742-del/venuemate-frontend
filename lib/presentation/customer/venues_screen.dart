@@ -440,7 +440,7 @@ class _CustomerVenuesScreenState extends State<CustomerVenuesScreen> {
                                 color: Colors.black.withAlpha(26), blurRadius: 6)],
                           ),
                           child: Icon(
-                            fav ? Icons.favorite_rounded : Icons.favorite_border_rounded,
+                            fav ? Icons.favorite_border_rounded : Icons.favorite_border_rounded,
                             size: 18,
                             color: AppTheme.primary,
                           ),
